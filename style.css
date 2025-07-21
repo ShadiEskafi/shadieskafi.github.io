@@ -38,6 +38,7 @@ body, html {
 #nav-bar #logo-name img {
     border: solid #c7af90 1px;
     border-radius: 50%;
+    width: 48px;
 }
 
 #nav-bar #logo-name a {
