@@ -1,6 +1,6 @@
 const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
 });
 
 // التعامل مع الضغط على روابط التنقل
@@ -13,5 +13,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-document.getElementById('year').textContent = new Date().getFullYear();
