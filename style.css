@@ -383,7 +383,8 @@ body, html {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     padding: 20px 35px;
     gap: 10px;
     margin-bottom: 20px;
