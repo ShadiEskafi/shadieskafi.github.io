@@ -301,6 +301,34 @@ body, html {
     color: #816a4b;
 }
 
+#posts-section #show-all-posts a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #a3855f;
+    border-radius: 6px;
+    margin: 15px 0 0 0;
+    padding: 10px 0;
+    color: #0b1a16;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#posts-section #show-all-posts a:hover {
+    background-color: #816a4b;
+}
+
+#posts-section #show-all-posts a > i {
+    transition: 0.3s;
+}
+
+#posts-section #show-all-posts a:hover > i {
+    transform: translateX(-5px);
+}
+
 #products-section {
     height: fit-content;
     width: 95%;
@@ -316,7 +344,7 @@ body, html {
 }
 
 #products-section #products-container .product {
-    flex: 0 0 calc(50% - 12px);
+    flex: 1 1 calc(50% - 12px);
     background-color: #15302b;
     border-radius: 12px;
     border: #1b3d37 solid 2px;
@@ -393,6 +421,34 @@ body, html {
 
 .product #product-footer #product-action i {
     transform: rotate(90deg);
+}
+
+#products-section #show-all-products a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    background-color: #a3855f;
+    border-radius: 6px;
+    margin: 15px 0 0 0;
+    padding: 10px 0;
+    color: #0b1a16;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#products-section #show-all-products a:hover {
+    background-color: #816a4b;
+}
+
+#products-section #show-all-products a > i {
+    transition: 0.3s;
+}
+
+#products-section #show-all-products a:hover > i {
+    transform: translateX(-5px);
 }
 
 footer {
