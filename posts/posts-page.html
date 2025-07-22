@@ -6,7 +6,7 @@
 
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./../style.css" />
 
     <!-- Font Awseom -->
     <link
@@ -26,7 +26,7 @@
     <div class="container" data-scroll-section>
       <header id="nav-bar" data-scroll>
         <div id="logo-name">
-          <a href="index.html"><img src="./images/profile-peictur.png" alt="صورتي الشخصية" /></a>
+          <a href="index.html"><img src="./../images/profile-peictur.png" alt="صورتي الشخصية" /></a>
           <a href="index.html">شادي محمد اسكافي</a>
         </div>
         <nav>
@@ -44,31 +44,31 @@
         data-scroll-class="is-visible"
         class="reveal"
       >
-      <a href="index.html" class="back-btn">
+      <a href="./../index.html" class="back-btn">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
         <p>الرئيسية</p>
       </a>  
       <h1 class="section-title">المقالات</h1>
         <div id="posts-section-container">
-          <div class="post">
+          <div class="post" onclick="window.location.href='./post-1/post-1.html'">
             <div id="post-img-container">
-              <img src="./images/post-image-1.png" alt="صورة البوست رقم 1" />
+              <img src="./../images/post-image-1.png" alt="صورة البوست رقم 1" />
             </div>
             <div id="post-body">
               <div id="post-info">
                 <div id="post-tag">
-                  <i class="fa-solid fa-clapperboard"></i>
-                  <p>صناعة المحتوى</p>
+                  <i class="fa-solid fa-code"></i>
+                  <p>برمجة</p>
                 </div>
-                <div id="post-title">هذا قالب لبطاقة مقال</div>
-                <div id="post-date">Jul 10,2025</div>
+                <div id="post-title">البرمجة بين الماضي والحاضر والمستقبل</div>
+                <div id="post-date">20/07/2025</div>
               </div>
               <i class="fa-solid fa-caret-left" id="left-arrow"></i>
             </div>
           </div>
           <div class="post">
             <div id="post-img-container">
-              <img src="./images/post-image-1.png" alt="صورة البوست رقم 1" />
+              <img src="./../images/post-image-1.png" alt="صورة البوست رقم 1" />
             </div>
             <div id="post-body">
               <div id="post-info">
@@ -84,7 +84,7 @@
           </div>
           <div class="post">
             <div id="post-img-container">
-              <img src="./images/post-image-1.png" alt="صورة البوست رقم 1" />
+              <img src="./../images/post-image-1.png" alt="صورة البوست رقم 1" />
             </div>
             <div id="post-body">
               <div id="post-info">
@@ -130,5 +130,5 @@
   </body>
   <!-- smooth scrol -->
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="./script.js"></script>
+  <script src="./../script.js"></script>
 </html>
