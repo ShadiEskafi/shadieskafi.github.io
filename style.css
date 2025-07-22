@@ -508,6 +508,44 @@ footer .footer-social-icon a{
   transform: translateY(0);
 }
 
+.back-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #816a4b;
+    text-decoration: none;
+    gap: 12px;
+    transition: 0.3s;
+    margin: 0 0 20px 0;
+    padding: 0 0 10px 0;
+    width: fit-content;
+}
+
+.back-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #816a4b;
+    transition: 0.2s;
+    border-radius: 50%;
+}
+
+.back-btn:hover::after {
+    width: 100%;
+}
+
+.back-btn:hover {
+    gap: 15px;
+}
+
+.back-btn p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
 /* ===============================
    Media Queries للاستجابة
    =============================== */
