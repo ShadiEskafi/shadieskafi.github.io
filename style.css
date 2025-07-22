@@ -176,6 +176,24 @@ body, html {
     color: #0b1a16;
 }
 
+#about-section {
+    height: fit-content;
+    width: 95%;
+    padding: 1.6rem 0;
+    margin: 15px auto 20px auto;
+    border-bottom: #a3855f solid 1px;
+}
+
+#about-section p {
+    color: #a3855f;
+    font-size: 1.2rem;
+}
+
+#about-section p span {
+    color: #c7af90;
+    font-weight: 600;
+}
+
 #posts-section {
     height: fit-content;
     width: 95%;
