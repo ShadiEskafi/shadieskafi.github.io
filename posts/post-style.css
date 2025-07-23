@@ -274,97 +274,267 @@ footer .footer-social-icon a{
 }
 
 /* ===============================
-   Media Queries للاستجابة
+   تحسينات التجاوب للمحتوى الرئيسي
    =============================== */
 
-/* الأجهزة اللوحية الكبيرة */
-@media screen and (max-width: 1200px) {
+/* الشاشات الكبيرة جداً */
+@media screen and (min-width: 1920px) {
     .container {
-        padding: 0 100px;
+        padding: 0 300px;
+    }
+}
+
+/* إضافات للأجهزة اللوحية الكبيرة */
+@media screen and (max-width: 1200px) {
+    .post-card {
+        padding: 2.5rem 4%;
+    }
+    
+    .post-card .post-header .post-title {
+        font-size: 1.6rem;
+    }
+    
+    .post-card .post-body .post-text {
+        font-size: 1.1rem;
+        line-height: 2.2;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 50px;
+    .post-container {
+        width: 98%;
+        margin: 100px auto 15px auto;
     }
-
+    
+    .post-card {
+        padding: 2rem 3%;
+    }
+    
+    .post-card .post-body .img-container {
+        height: 300px;
+    }
+    
+    .back-btn p {
+        font-size: 1.2rem;
+    }
 }
 
-/* الأجهزة اللوحية الصغيرة */
+/* تحسينات للأجهزة اللوحية الصغيرة */
 @media screen and (max-width: 768px) {
-    .container {
-        padding: 0 20px;
+    .post-container {
+        width: 100%;
+        margin: 80px auto 15px auto;
     }
     
-    #nav-bar {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem;
-        gap: 1rem;
+    .post-card {
+        padding: 1.5rem 4%;
+        margin: 20px 0 0 0;
     }
     
-    #nav-bar #logo-name {
-        flex-direction: column;
+    .post-card .post-header {
+        gap: 20px;
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+    }
+    
+    .post-card .post-header .post-title {
+        font-size: 1.4rem;
         text-align: center;
+    }
+    
+    .post-card .post-header .post-info {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .post-card .post-header .post-info .post-tag {
+        align-self: center;
+    }
+    
+    .post-card .post-header .post-info .post-date {
+        align-self: center;
+        font-size: 0.9rem;
+    }
+    
+    .post-card .post-body .img-container {
+        height: 250px;
+    }
+    
+    .post-card .post-body .post-text {
+        padding: 4% 0;
+        font-size: 1rem;
+        line-height: 2;
+    }
+    
+    .back-to-up-btn {
+        font-size: 1.4rem;
+        padding: 12px 0;
+    }
+}
+
+/* تحسينات للهواتف المحمولة الكبيرة */
+@media screen and (max-width: 480px) {
+    .post-container {
+        margin: 60px auto 10px auto;
+    }
+    
+    .post-card {
+        padding: 1.2rem 3%;
+        border-radius: 10px;
+    }
+    
+    .post-card .post-header {
+        gap: 15px;
+        margin: 0 0 15px 0;
+        padding: 0 0 15px 0;
+    }
+    
+    .post-card .post-header .post-title {
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+    
+    .post-card .post-header .post-info .post-tag {
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+    
+    .post-card .post-header .post-info .post-tag p {
+        font-size: 0.7rem;
+    }
+    
+    .post-card .post-header .post-info .post-tag i {
+        font-size: 0.5rem;
+    }
+    
+    .post-card .post-header .post-info .post-date {
+        font-size: 0.8rem;
+    }
+    
+    .post-card .post-body .img-container {
+        height: 200px;
+        border-radius: 0 0 8px 8px;
+    }
+    
+    .post-card .post-body .post-text {
+        padding: 3% 0;
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+    
+    .back-btn {
+        gap: 8px;
+        margin: 0 0 15px 0;
+        padding: 0 0 8px 0;
+    }
+    
+    .back-btn:hover {
         gap: 10px;
     }
     
-    #nav-bar #logo-name a {
+    .back-btn p {
+        font-size: 1rem;
+    }
+    
+    .back-to-up-btn {
         font-size: 1.2rem;
-    }
-    
-    #nav-bar ul {
-        gap: 1.5rem;
-    }
-    
-}
-
-/* الهواتف المحمولة الكبيرة */
-@media screen and (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    #nav-bar {
-        margin: 15px 0 0 0;
-        padding: 0.8rem;
-    }
-    
-    #nav-bar #logo-name a {
-        font-size: 1rem;
-    }
-    
-    #nav-bar ul {
-        gap: 1rem;
-    }
-    
-    #nav-bar ul li a {
-        font-size: 0.9rem;
-    }
-    
-    footer {
-        padding: 15px 20px;
-    }
-    
-    footer #footer-title {
-        font-size: 0.9rem;
-        text-align: center;
-    }
-    
-    footer #footer-social-icons-container {
-        gap: 0.6rem;
-    }
-    
-    footer .footer-social-icon {
-        padding: 5px 8px;
-        font-size: 1rem;
+        padding: 10px 0;
+        border-radius: 6px;
     }
 }
 
-/* الهواتف المحمولة الصغيرة جداً */
+/* تحسينات للهواتف المحمولة الصغيرة جداً */
 @media screen and (max-width: 320px) {
+    .post-container {
+        margin: 50px auto 10px auto;
+    }
+    
+    .post-card {
+        padding: 1rem 2%;
+        border-radius: 8px;
+    }
+    
+    .post-card .post-header .post-title {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    
+    .post-card .post-header .post-info .post-tag {
+        padding: 6px 5px;
+        font-size: 11px;
+        border-radius: 4px;
+    }
+    
+    .post-card .post-header .post-info .post-date {
+        font-size: 0.7rem;
+    }
+    
+    .post-card .post-body .img-container {
+        height: 180px;
+    }
+    
+    .post-card .post-body .post-text {
+        font-size: 0.8rem;
+        line-height: 1.6;
+        padding: 2% 0;
+    }
+    
+    .back-btn p {
+        font-size: 0.9rem;
+    }
+    
+    .back-to-up-btn {
+        font-size: 1rem;
+        padding: 8px 0;
+    }
+}
+
+/* تحسينات عرض أفقي للهواتف */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .post-container {
+        margin: 40px auto 10px auto;
+    }
+    
+    .post-card .post-body .img-container {
+        height: 180px;
+    }
+    
+    .post-card .post-body .post-text {
+        padding: 2% 0;
+        line-height: 1.8;
+    }
+}
+
+/* إعدادات خاصة للشاشات عالية الدقة */
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .post-card .post-body img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* تحسينات للطباعة */
+@media print {
     .container {
-        padding: 0 10px;
+        padding: 0;
+    }
+    
+    #nav-bar,
+    footer,
+    .back-btn,
+    .back-to-up-btn {
+        display: none;
+    }
+    
+    .post-card {
+        background-color: white;
+        color: black;
+        border: 1px solid #ccc;
+    }
+    
+    .post-card .post-header .post-title,
+    .post-card .post-header .post-info .post-date,
+    .post-card .post-body .post-text {
+        color: black;
     }
 }
