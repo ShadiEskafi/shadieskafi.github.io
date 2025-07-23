@@ -546,6 +546,14 @@ footer .footer-social-icon a{
     font-weight: 500;
 }
 
+.section-hint {
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+    color: #c7af90;
+    font-size: 1.2rem;
+}
+
 /* ===============================
    Media Queries للاستجابة
    =============================== */
