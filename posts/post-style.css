@@ -165,6 +165,19 @@ body, html {
     font-weight: 500;
 }
 
+.back-to-up-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #0b1a16;
+    font-size: 1.6rem;
+    line-height: 0;
+    padding: 10px 0;
+    border-radius: 9px;
+    color: #a3855f;
+}
+
 footer {
     display: flex;
     flex-direction: column;
