@@ -1,0 +1,30 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "البرمجة بين الماضي والحاضر والمستقبل",
+      "description": "استكشاف تطور البرمجة عبر العصور",
+      "date": "20/07/2025",
+      "image": "./images/post-image-1.png",
+      "tag": {
+        "icon": "fa-solid fa-code",
+        "name": "برمجة"
+      },
+      "url": "./posts/post-1.html",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "الكود النظيف - Clean Code",
+      "description": "مبادئ كتابة كود نظيف وقابل للقراءة",
+      "date": "23/06/2025",
+      "image": "./images/post-image-2.png",
+      "tag": {
+        "icon": "fa-solid fa-code",
+        "name": "برمجة"
+      },
+      "url": "./posts/post-2.html",
+      "featured": true
+    }
+  ]
+}
