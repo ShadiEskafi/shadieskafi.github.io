@@ -75,6 +75,9 @@ body, html {
 #nav-bar ul li a:hover {
     color: #a3855f;
 }
+#posts-section{
+    z-index: 100;
+}
 
 .post-container {
     width: 95%;

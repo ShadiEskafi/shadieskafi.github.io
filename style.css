@@ -1342,3 +1342,23 @@ footer .footer-social-icon a{
         overflow-wrap: break-word;
     }
 }
+
+[data-aos="fade-up"] {
+  transform: translateY(25px) !important; /* ارتفاع بسيط فقط */
+  transition-timing-function: ease-out !important;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+[data-aos="slide-right"] {
+  transform: translateX(-25px) !important; /* ارتفاع بسيط فقط */
+  transition-timing-function: ease-out !important;
+}
+
+[data-aos="slide-right"].aos-animate {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}

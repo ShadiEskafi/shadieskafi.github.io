@@ -1,118 +1,84 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="./../images/favicon.ico" type="image/x-icon">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./../style.css" />
+  <link rel="icon" href="./../images/favicon.ico" type="image/x-icon">
 
-    <!-- Font Awseom -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+  <link rel="stylesheet" href="./../style.css" />
 
-    <!-- smooth scrol -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
-    />
+  <!-- Font Awseom -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <title>شادي اسكافي | صانع محتوى</title>
-  </head>
-  <body data-scroll-container>
-    <div class="container" data-scroll-section>
-      <header id="nav-bar" data-scroll>
-        <div id="logo-name">
-          <a href="./../index.html"><img src="./../images/profile-peictur.png" alt="صورتي الشخصية" /></a>
-          <a href="./../index.html">شادي محمد اسكافي</a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="./../index.html">مـــن أنــا</a></li>
-            <li><a href="./../index.html">المقالات</a></li>
-            <li><a href="./../index.html">المنتجات</a></li>
-          </ul>
-        </nav>
-      </header>
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-      <section
-        id="posts-section"
-        data-scroll
-        data-scroll-class="is-visible"
-        class="reveal"
-      >
+  <script src="https://cdn.jsdelivr.net/npm/smooth-scrollbar@8.7.4/dist/smooth-scrollbar.js"></script>
+
+  <title>شادي اسكافي | صانع محتوى</title>
+</head>
+
+<body>
+  <div class="container" id="smooth-scroll">
+    <header id="nav-bar">
+      <div id="logo-name">
+        <a href="./../index.html"><img src="./../images/profile-peictur.png" alt="صورتي الشخصية" /></a>
+        <a href="./../index.html">شادي محمد اسكافي</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./../index.html">مـــن أنــا</a></li>
+          <li><a href="./../index.html">المقالات</a></li>
+          <li><a href="./../index.html">المنتجات</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="posts-section">
       <a href="./../index.html" class="back-btn">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
         <p>الرئيسية</p>
-      </a>  
+      </a>
       <h1 class="section-title">المقالات</h1>
-        <div id="posts-section-container">
-          <div class="post" onclick="window.location.href='./post-1/post-1.html'">
-            <div id="post-img-container">
-              <img src="./../images/post-image-1.png" alt="صورة البوست رقم 1" />
-            </div>
-            <div id="post-body">
-              <div id="post-info">
-                <div id="post-tag">
-                  <i class="fa-solid fa-code"></i>
-                  <p>برمجة</p>
-                </div>
-                <div id="post-title">البرمجة بين الماضي والحاضر والمستقبل</div>
-                <div id="post-date">20/07/2025</div>
-              </div>
-              <i class="fa-solid fa-caret-left" id="left-arrow"></i>
-            </div>
-          </div>
-          <div class="post" onclick="window.location.href='./post-2/post-2.html'">
-            <div id="post-img-container">
-              <img src="./../images/post-image-2.png" alt="صورة البوست رقم 2" />
-            </div>
-            <div id="post-body">
-              <div id="post-info">
-                <div id="post-tag">
-                  <i class="fa-solid fa-code"></i>
-                  <p>برمجة</p>
-                </div>
-                <div id="post-title">الكود النظيف - Clean Code</div>
-                <div id="post-date">23/06/2025</div>
-              </div>
-              <i class="fa-solid fa-caret-left" id="left-arrow"></i>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div id="posts-section-container">
+      </div>
+    </section>
 
-      <footer data-scroll>
-        <div id="footer-title">© <span id="year"></span> شادي محمد اسكـــــــــــــــافي</div>
-        <div id="footer-social-icons-container">
-          <div class="footer-social-icon">
-            <a href="https://www.facebook.com/shadi.eskafi" target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <div class="footer-social-icon">
-            <a href="https://www.instagram.com/shadi_eskafi/" target="_blank"
-              ><i class="fa-brands fa-square-instagram"></i
-            ></a>
-          </div>
-          <div class="footer-social-icon">
-            <a href="https://www.linkedin.com/in/shadieskafi/" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-          <div class="footer-social-icon">
-            <a href="https://mail.google.com/mail/?view=cm&to=shadieskafi@gmail.com"" target="_blank"
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-          </div>
+    <footer>
+      <div id="footer-title">© <span id="year"></span> شادي محمد اسكـــــــــــــــافي</div>
+      <div id="footer-social-icons-container">
+        <div class="footer-social-icon">
+          <a href="https://www.facebook.com/shadi.eskafi" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         </div>
-      </footer>
-    </div>
-  </body>
-  <!-- smooth scrol -->
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="./../script.js"></script>
+        <div class="footer-social-icon">
+          <a href="https://www.instagram.com/shadi_eskafi/" target="_blank"><i
+              class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <div class="footer-social-icon">
+          <a href="https://www.linkedin.com/in/shadieskafi/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footer-social-icon">
+          <a href="https://mail.google.com/mail/?view=cm&to=shadieskafi@gmail.com"" target=" _blank"><i
+              class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    Scrollbar.init(document.querySelector('#smooth-scroll'), {
+      damping: 0.08 // كل ما قل الرقم زادت النعومة (جرب بين 0.05 - 0.1)
+    });
+    
+    AOS.init({
+    once: true // ✅ يخلي العنصر يظهر مرة وحدة وما يختفي لما يبعد عنه
+  });
+  </script>
+
+  <script src="./../js/general-posts-handel.js"></script>
+</body>
+
 </html>

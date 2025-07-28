@@ -10,7 +10,7 @@
         "icon": "fa-solid fa-code",
         "name": "برمجة"
       },
-      "url": "./posts/post-1.html",
+      "url": "post-1/post-1.html",
       "featured": true
     },
     {
@@ -23,7 +23,20 @@
         "icon": "fa-solid fa-code",
         "name": "برمجة"
       },
-      "url": "./posts/post-2.html",
+      "url": "post-2/post-2.html",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": " كنوز الماضي بعدها بتفيدنا لـ هلقيت!",
+      "description": "متذكرين كيف الـ Templating بالـ PHP كان معجّجنا؟",
+      "date": "22/06/2025",
+      "image": "./images/post-image-3.jpeg",
+      "tag": {
+        "icon": "fa-solid fa-code",
+        "name": "برمجة"
+      },
+      "url": "posts/post-3.html",
       "featured": true
     }
   ]
