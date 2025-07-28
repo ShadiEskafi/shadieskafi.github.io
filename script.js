@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 
 async function loadHomePosts() {
   try {
-    const response = await fetch("./data/posts.JSON");
+    const response = await fetch("./data/posts.json");
     const data = await response.json();
     const posts = data.posts;
 
