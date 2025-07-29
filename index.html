@@ -193,13 +193,13 @@
     });
 
     const scrollbar = Scrollbar.init(document.querySelector('#smooth-scroll'), {
-      damping: 1,
-      alwaysShowTracks: false,
+      damping: 0.001,
+      alwaysShowTracks: true,
       delegateTo: document,
     });
 
     let isScrolling;
-    let currentDamping = 1; // سرعة بداية عالية
+    let currentDamping = 0.001; // سرعة بداية عالية
     scrollbar.options.damping = currentDamping;
 
     scrollbar.addListener(() => {
@@ -208,7 +208,7 @@
       // وقت التوقف عن التمرير (200ms)
       isScrolling = setTimeout(() => {
         // لما يوقف التمرير، نزود damping عشان نبطئ
-        scrollbar.options.damping = 1;
+        scrollbar.options.damping = 0.001;
       }, 200);
 
       // خلال التمرير نزود السرعة (نخفض damping)
